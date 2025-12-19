@@ -338,14 +338,14 @@ const App: React.FC = () => {
         {/* Chat Feed */}
         <main className="flex-1 overflow-y-auto px-4 md:px-8 py-6 relative z-10 scroll-smooth flex flex-col">
           {messages.length === 0 ? (
-             <div className="flex-1 flex flex-col justify-center items-center pb-12">
+             <div className="flex-1 flex flex-col justify-center items-center pb-4 md:pb-12">
                <div className="text-center space-y-4 opacity-0 animate-fade-in" style={{ animationDelay: '0.1s' }}>
                   <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
                     Get 6Pack <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-500">Lean</span>
                   </h2>
                </div>
-               
-               <div className="mt-12 w-full max-w-2xl grid grid-cols-1 md:grid-cols-2 gap-3 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+
+               <div className="mt-6 md:mt-12 w-full max-w-2xl grid grid-cols-1 md:grid-cols-2 gap-3 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
                  {SUGGESTIONS.map((item, i) => (
                    <button 
                     key={i}
