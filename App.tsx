@@ -66,9 +66,9 @@ const PlateIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const BowlIcon = ({ className }: { className?: string }) => (
+const UtensilsIcon = ({ className }: { className?: string }) => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-1.5.375H6c-.53 0-1.045-.127-1.5-.375L3 16.5m18 0v-2.104c0-.779-.637-1.61-1.5-2.104a60.715 60.715 0 00-15 0C3.637 12.786 3 13.617 3 14.396V16.5" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 2.25v13.5m0-13.5c-1.657 0-3 1.343-3 3v3.75c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75V5.25c0-1.657-1.343-3-3-3zm0 13.5v6m6-16.5V9m3.75 0c0-1.657-1.343-3-3-3s-3 1.343-3 3v.75h.008v8.25a1.5 1.5 0 001.5 1.5h2.984a1.5 1.5 0 001.5-1.5V9.75h.008V9z" />
   </svg>
 );
 
@@ -87,7 +87,7 @@ const App: React.FC = () => {
   const SUGGESTIONS = [
     { text: "I have 2200 calories left, what should I eat?", icon: PlanIcon },
     { text: "I have 1500 calories left, what should I eat?", icon: PlateIcon },
-    { text: "I have 750 calories left, what should I eat?", icon: DiningIcon },
+    { text: "I have 750 calories left, what should I eat?", icon: UtensilsIcon },
     { text: "I have 100 calories left, what should I eat?", icon: FlashIcon }
   ];
 
