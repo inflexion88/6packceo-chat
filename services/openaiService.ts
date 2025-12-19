@@ -7,7 +7,9 @@ import {
   OBJECTIONS,
   SUPPLEMENT_STACK,
   ALCOHOL_PROTOCOL,
-  TRAVEL_SURVIVAL
+  TRAVEL_SURVIVAL,
+  QUICK_SNACKS,
+  COMMON_SUBSTITUTIONS
 } from "../data/knowledgeBase";
 
 // We inject the "Database" directly into the context window.
@@ -37,6 +39,12 @@ ${JSON.stringify(ALCOHOL_PROTOCOL, null, 2)}
 TRAVEL SURVIVAL GUIDES:
 ${JSON.stringify(TRAVEL_SURVIVAL, null, 2)}
 
+QUICK SNACKS (for "I need something quick" or calorie-specific requests):
+${JSON.stringify(QUICK_SNACKS, null, 2)}
+
+COMMON SUBSTITUTIONS (for dietary restrictions):
+${JSON.stringify(COMMON_SUBSTITUTIONS, null, 2)}
+
 OBJECTION HANDLING:
 ${JSON.stringify(OBJECTIONS, null, 2)}
 === END DATABASE ===
@@ -45,6 +53,8 @@ YOUR INSTRUCTIONS:
 1. **Use the Database**: Always check the database above for the *strategy*, but deliver it in your own coaching voice.
    - If the user asks about drinking/alcohol, refer to "ALCOHOL DAMAGE CONTROL".
    - If the user is traveling, refer to "TRAVEL SURVIVAL GUIDES".
+   - If the user has calories remaining or needs a quick option, use "QUICK SNACKS".
+   - If the user has dietary restrictions (lactose intolerant, doesn't like certain foods), use "COMMON SUBSTITUTIONS".
 
 2. **Brand Voice (THE MOST IMPORTANT PART)**:
    - **Role**: You are a European fitness coach. Direct, professional, no-nonsense. You are talking to a busy executive who wants results, not cheerleading.

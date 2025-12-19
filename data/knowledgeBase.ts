@@ -105,6 +105,51 @@ export const MEAL_PLANS = {
   ]
 };
 
+export const QUICK_SNACKS = {
+  "100_150_calories": [
+    { item: "2 Hard Boiled Eggs", macros: "12g P / 10g F / 0g C", calories: "140" },
+    { item: "Greek Yogurt (100g)", macros: "10g P / 3g F / 5g C", calories: "85" },
+    { item: "Beef Jerky (28g)", macros: "9g P / 1g F / 3g C", calories: "70" },
+    { item: "1/2 Avocado", macros: "2g P / 15g F / 9g C", calories: "120" }
+  ],
+  "200_300_calories": [
+    { item: "Whey Protein Shake", macros: "25g P / 2g F / 3g C", calories: "130" },
+    { item: "4oz Chicken Breast", macros: "35g P / 4g F / 0g C", calories: "180" },
+    { item: "1/4 Cup Almonds", macros: "6g P / 14g F / 6g C", calories: "170" },
+    { item: "Greek Yogurt (200g) + Berries", macros: "20g P / 6g F / 20g C", calories: "210" }
+  ],
+  pre_workout: [
+    { item: "1 Banana + Pink Salt", macros: "1g P / 0g F / 27g C", calories: "105", notes: "Quick energy." },
+    { item: "Rice Cakes + Honey", macros: "2g P / 0g F / 35g C", calories: "150", notes: "Fast-digesting carbs." },
+    { item: "Dates (3-4)", macros: "1g P / 0g F / 36g C", calories: "140", notes: "Natural glucose spike." }
+  ],
+  post_workout: [
+    { item: "Whey Shake + Banana", macros: "26g P / 2g F / 30g C", calories: "240", notes: "Immediate recovery." },
+    { item: "6oz Salmon + Sweet Potato (small)", macros: "40g P / 18g F / 25g C", calories: "420", notes: "Full muscle repair." },
+    { item: "4 Eggs + Jasmine Rice (100g)", macros: "30g P / 20g F / 30g C", calories: "400", notes: "Anabolic window." }
+  ]
+};
+
+export const COMMON_SUBSTITUTIONS = {
+  lactose_intolerant: {
+    avoid: "Milk, Cheese, Whey Protein, Greek Yogurt",
+    use_instead: "Lactose-free milk, Beef Isolate Protein, Coconut Yogurt, Almond Milk (unsweetened)"
+  },
+  dont_like_chicken: {
+    alternatives: "Turkey breast, White fish (cod/halibut), Lean bison, Egg whites"
+  },
+  dont_like_beef: {
+    alternatives: "Bison, Lamb, Venison, Wild-caught salmon"
+  },
+  vegetarian_protein: {
+    note: "Not ideal for 6pack goals, but workable.",
+    options: "Eggs (if allowed), Greek Yogurt, Whey Isolate, Tempeh (fermented soy only), Lentils"
+  },
+  no_rice_available: {
+    alternatives: "Sweet potato, White potato (peeled), Oats, Quinoa"
+  }
+};
+
 export const OBJECTIONS = {
   "too_hard": "Hard is where the value is. If it were easy, everyone would have a 6-pack. You are paying for the result, not the ease.",
   "hungry": "Hunger is just your body detoxing from dopamine addiction. Drink 1L of water and get back to work.",
