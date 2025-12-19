@@ -67,10 +67,10 @@ const App: React.FC = () => {
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   const SUGGESTIONS = [
-    { text: "Draft a 2200 kcal high-protein meal plan with steak.", icon: PlanIcon },
-    { text: "What should I eat at a steakhouse while on a cut?", icon: DiningIcon },
-    { text: "Calculate macros for a 200lb male, 12% bodyfat.", icon: StatsIcon },
-    { text: "Give me a quick high-protein breakfast idea.", icon: FlashIcon }
+    { text: "I have 250 calories left, what should I eat?", icon: FlashIcon },
+    { text: "What's a good 500 calorie post-workout meal?", icon: StatsIcon },
+    { text: "I need a quick 300 calorie breakfast option.", icon: DiningIcon },
+    { text: "Give me a 400 calorie high-protein meal.", icon: PlanIcon }
   ];
 
   // --- Persistence Logic ---
