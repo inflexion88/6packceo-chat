@@ -1,3 +1,7 @@
+// DEPRECATED: No longer used in system prompt as of 2025-12-18
+// Reason: JSON injection was causing hallucinations. Simplified system prompt now relies on GPT-4o-mini's training data for accurate macros.
+// Kept for historical reference.
+
 export const CORE_PHILOSOPHY = `
 1. **The Body is a Business**: We manage it with KPIs (Key Performance Indicators). ROI (Return on Ingestion) must be positive.
 2. **Binary Nutrition**: Foods are either an ASSET (Fuel) or a LIABILITY (Toxin). There is no neutral ground.
