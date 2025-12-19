@@ -397,7 +397,7 @@ const App: React.FC = () => {
         </main>
 
         {/* Input Area */}
-        <footer className="sticky bottom-0 z-20 px-3 py-2 md:p-6 pb-safe bg-gradient-to-t from-brand-dark via-brand-dark/95 to-transparent">
+        <footer className="fixed bottom-0 left-0 right-0 z-20 px-3 py-2 md:p-6 bg-gradient-to-t from-brand-dark via-brand-dark/95 to-transparent md:sticky">
           <div className="max-w-4xl mx-auto">
             <div className="relative flex items-end gap-2 bg-brand-surface border border-white/10 rounded-2xl px-3 py-2 md:px-4 md:py-3 focus-within:ring-2 focus-within:ring-brand-red/50 focus-within:border-brand-red transition-all shadow-2xl shadow-black">
               {/* Glow effect */}
@@ -424,8 +424,8 @@ const App: React.FC = () => {
                 <SendIcon />
               </button>
             </div>
-            <div className="text-center mt-2 md:mt-3 flex justify-center gap-4">
-                <p className="text-[10px] text-gray-600 font-medium tracking-wide">6PACKCEO INTELLIGENCE SYSTEM v2.0</p>
+            <div className="text-center mt-1 md:mt-3 flex justify-center gap-4 mb-1 md:mb-0">
+                <p className="text-[9px] md:text-[10px] text-gray-600 font-medium tracking-wide">6PACKCEO INTELLIGENCE SYSTEM v2.0</p>
             </div>
           </div>
         </footer>
