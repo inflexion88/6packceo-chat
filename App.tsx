@@ -85,9 +85,9 @@ const App: React.FC = () => {
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   const SUGGESTIONS = [
-    { text: "I have 2200 calories left, what should I eat?", icon: CalendarIcon },
+    { text: "I have 2200 calories left, what should I eat?", icon: PlanIcon },
     { text: "I have 1500 calories left, what should I eat?", icon: PlateIcon },
-    { text: "I have 750 calories left, what should I eat?", icon: BowlIcon },
+    { text: "I have 750 calories left, what should I eat?", icon: DiningIcon },
     { text: "I have 100 calories left, what should I eat?", icon: FlashIcon }
   ];
 
