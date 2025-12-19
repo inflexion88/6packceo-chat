@@ -397,12 +397,12 @@ const App: React.FC = () => {
         </main>
 
         {/* Input Area */}
-        <footer className="sticky bottom-0 z-20 p-4 md:p-6 bg-gradient-to-t from-brand-dark via-brand-dark/95 to-transparent">
+        <footer className="sticky bottom-0 z-20 px-3 py-2 md:p-6 pb-safe bg-gradient-to-t from-brand-dark via-brand-dark/95 to-transparent">
           <div className="max-w-4xl mx-auto">
-            <div className="relative flex items-end gap-2 bg-brand-surface border border-white/10 rounded-2xl px-4 py-3 focus-within:ring-2 focus-within:ring-brand-red/50 focus-within:border-brand-red transition-all shadow-2xl shadow-black">
+            <div className="relative flex items-end gap-2 bg-brand-surface border border-white/10 rounded-2xl px-3 py-2 md:px-4 md:py-3 focus-within:ring-2 focus-within:ring-brand-red/50 focus-within:border-brand-red transition-all shadow-2xl shadow-black">
               {/* Glow effect */}
               <div className="absolute -inset-0.5 bg-brand-red/10 rounded-2xl blur opacity-0 transition-opacity duration-500 focus-within:opacity-100 -z-10"></div>
-              
+
               <textarea
                 ref={inputRef}
                 value={inputValue}
@@ -410,21 +410,21 @@ const App: React.FC = () => {
                 onKeyDown={handleKeyDown}
                 placeholder="Ask 6packCEO..."
                 rows={1}
-                className="w-full bg-transparent text-white placeholder-gray-500 text-base md:text-lg resize-none focus:outline-none max-h-32 py-1 scrollbar-hide font-medium"
+                className="w-full bg-transparent text-white placeholder-gray-500 text-sm md:text-base lg:text-lg resize-none focus:outline-none max-h-32 py-1 scrollbar-hide font-medium"
               />
               <button
                 onClick={handleSendMessage}
                 disabled={!inputValue.trim() || isTyping}
-                className={`p-2.5 rounded-xl transition-all duration-200 mb-0.5 flex-shrink-0
+                className={`p-2 md:p-2.5 rounded-xl transition-all duration-200 mb-0.5 flex-shrink-0
                   ${inputValue.trim() && !isTyping
-                    ? 'bg-brand-red text-white hover:bg-red-700 shadow-lg shadow-red-900/40 hover:scale-105' 
+                    ? 'bg-brand-red text-white hover:bg-red-700 shadow-lg shadow-red-900/40 hover:scale-105'
                     : 'bg-white/5 text-gray-600 cursor-not-allowed'
                   }`}
               >
                 <SendIcon />
               </button>
             </div>
-            <div className="text-center mt-3 flex justify-center gap-4">
+            <div className="text-center mt-2 md:mt-3 flex justify-center gap-4">
                 <p className="text-[10px] text-gray-600 font-medium tracking-wide">6PACKCEO INTELLIGENCE SYSTEM v2.0</p>
             </div>
           </div>
